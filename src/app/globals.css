@@ -51,6 +51,11 @@ body {
 
 .section {
   padding-block: 4rem;
+  scroll-margin-top: 1.25rem;
+}
+
+#tilaus {
+  scroll-margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {

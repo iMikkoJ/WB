@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { COMPANY, LINKS } from "@/lib/constants";
 import { MobileCallBar } from "@/components/MobileCallBar";
+import { ScrollTo } from "@/components/ScrollTo";
 
 const services = [
   {
@@ -68,15 +69,15 @@ export default function Home() {
             {COMPANY.name}
           </a>
           <nav className="hidden items-center gap-6 text-sm text-white/90 sm:flex">
-            <a href="#palvelu" className="hover:text-white">
+            <ScrollTo targetId="palvelu" className="hover:text-white">
               Palvelu
-            </a>
-            <a href="#hinnat" className="hover:text-white">
+            </ScrollTo>
+            <ScrollTo targetId="hinnat" className="hover:text-white">
               Hinnat
-            </a>
-            <a href="#tilaus" className="hover:text-white">
+            </ScrollTo>
+            <ScrollTo targetId="tilaus" className="hover:text-white">
               Tilaa
-            </a>
+            </ScrollTo>
             <a href={LINKS.tel} className="btn btn-yellow !min-h-9 !px-3 !text-sm">
               Soita
             </a>
@@ -92,11 +93,11 @@ export default function Home() {
             alt="Pakettiauto lastattavana – kuriirikuljetus yrityksille"
             fill
             priority
-            className="object-cover scale-105 blur-[2px]"
+            className="pointer-events-none object-cover scale-105 blur-[2px]"
             sizes="100vw"
           />
           <div
-            className="absolute inset-0"
+            className="pointer-events-none absolute inset-0"
             style={{
               background:
                 "linear-gradient(115deg, rgba(11,37,69,0.92) 0%, rgba(11,37,69,0.78) 45%, rgba(20,58,92,0.55) 100%)",
@@ -106,10 +107,10 @@ export default function Home() {
 
           <div className="relative z-10 flex min-h-[100svh] flex-col justify-center pb-16 pt-28">
             <div className="container-page max-w-3xl">
-              <p className="mb-4 text-2xl font-bold tracking-tight text-white md:text-3xl lg:text-4xl">
+              <p className="mb-3 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
                 {COMPANY.name}
               </p>
-              <h1 className="text-balance text-3xl font-semibold leading-tight md:text-4xl lg:text-[2.75rem]">
+              <h1 className="text-balance text-xl font-medium leading-snug text-white/95 md:text-2xl lg:text-[1.75rem]">
                 Kiireellinen kuljetus pääkaupunkiseudulla – nopeasti ja
                 luotettavasti
               </h1>
@@ -130,9 +131,9 @@ export default function Home() {
                 >
                   WhatsApp
                 </a>
-                <a href={LINKS.form} className="btn btn-outline">
+                <ScrollTo targetId="tilaus" className="btn btn-outline">
                   Tilaa kuljetus
-                </a>
+                </ScrollTo>
               </div>
 
               <p className="mt-8 text-sm text-white/85 md:text-base">
@@ -257,9 +258,9 @@ export default function Home() {
               >
                 WhatsApp
               </a>
-              <a href={LINKS.form} className="btn btn-outline">
+              <ScrollTo targetId="tilaus" className="btn btn-outline">
                 Avaa lomake
-              </a>
+              </ScrollTo>
             </div>
           </div>
         </section>
