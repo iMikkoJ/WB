@@ -90,7 +90,7 @@ export default function Home() {
         <section className="relative min-h-[100svh] overflow-hidden text-white">
           <Image
             src="/hero-van.jpg"
-            alt="Pakettiauto lastattavana – kuriirikuljetus yrityksille"
+            alt="Kuriiri pakettiauton äärellä – kuljetus yrityksille"
             fill
             priority
             className="pointer-events-none object-cover scale-105 blur-[2px]"

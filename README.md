@@ -30,7 +30,7 @@ Lomakkeella on placeholder-`action`. Oikea käsittely tehdään WordPressissä.
 
 ## Hero-kuva
 
-`public/hero-van.jpg` on geneerinen Pexels-kuva pakettiautosta (placeholder). Vaihda omaan kuvaan metallinharmaasta VW Transporterista, kun se on saatavilla. Tarkista käyttöoikeus ennen tuotantokäyttöä.
+`public/hero-van.jpg` on Pexels-placeholder (valkoihoinen kuriiri + pakettiauto). Vaihda omaan kuvaan metallinharmaasta VW Transporterista, kun se on saatavilla. Tarkista käyttöoikeus ennen tuotantokäyttöä.
 
 ## SEO
 
